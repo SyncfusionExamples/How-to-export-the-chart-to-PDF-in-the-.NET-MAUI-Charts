@@ -23,7 +23,7 @@ public partial class MainPage : ContentPage
         float width = (float)chart.Width + 75;
         float height = (float)chart.Height + 125;
 
-        //To reduce the width and height for Windows and MAC platform
+        //To reduce the width and height of the Windows and MAC platform
 #if !IOS && !ANDROID
         width = (float)chart.Width / 2.5f;
         height = (float)chart.Height / 1.5f;
