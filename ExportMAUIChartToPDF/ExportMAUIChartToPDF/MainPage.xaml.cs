@@ -47,7 +47,7 @@ public partial class MainPage : ContentPage
 #if ANDROID
         string path = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDocuments).ToString();
 #else
-        string path = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+        string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 #endif
         string filePath = Path.Combine(path, fileName);
         using FileStream fileStream = new(filePath, FileMode.Create, FileAccess.ReadWrite);
